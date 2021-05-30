@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teo Vladusic portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="navbar">
+            <div class="container">
+                
+                <a class="name" href="index.html">TEO VLADUŠIĆ</a>
+                
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="open menu">
+    
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="close navigation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">About me</a></li>
+                        <li><a href="#">My work</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li>
+                            <div class="links">
+                                <a href="https://github.com/teovladusic"><img src="images/github-logo.png" alt="github"></a>
+                                <a href="https://www.linkedin.com/in/teo-vladusic-84b945205/"><img src="images/linkedin-logo.png" alt="linkedin"></a>
+                                <a href="https://www.instagram.com/teovladusic_4/"><img src="images/instagram-logo.png" alt="instagram"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+        <section class="hero">
+            <div class="container">
+                <div id="hero-main">
+                    <div>
+                        <p class="head">Hi, my name is <b><br>Teo<br></b></p>
+                    </div>
+                    <div>
+                        <img src="images/android.png" class="hero-img" alt="illustration">
+                    </div>
+                </div>
+    
+                <div id="introduction">
+                    <p>I am student in Split with passion <br>for mobile app development, especially Android</br></p>
+                    <a id="reach-out-btn" href="https://www.linkedin.com/in/teo-vladusic-84b945205/">Reach out to me</a>
+                </div>
+            </div>
+
+            <div id="aboutme">
+                <div class="heading-right">
+                    <h2>About Me</h2>
+                </div>
+                
+                <div class="text">
+                    <p id="right-column">Currently studying computer science in high School of Electrical Engineering in Split. Not do I like to develop mobile apps, I also enjoy coding backend APIs.</p>
+                </div>
+
+                <div class="mywork">
+                    <div class="heading-left">
+                        <h2>My work</h2>
+                    </div>
+
+                    <div class="text">
+                        <p id="left-column">These are some of my personal projects, all of them are Android apps</p>
+                    </div>
+
+                    <div class="slider">
+                        <div class="slider-items">
+                            <div class="item active">
+                                <img src="images/keopi.jpg" alt="first slide">
+                            </div>
+                            <div class="item">
+                                <img src="images/prizma.jpg" alt="second slide">
+                            </div>
+                            <div class="item">
+                                <img src="images/messaginapp.jpg" alt="third slide">
+                            </div>
+
+                        </div>
+                        <div class="left-slide"><</div>
+                        <div class="right-slide">></div>  
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p>MORE IN</p>
+                    <div class="contacts">
+                        <ul>
+                            <li><a href="https://github.com/teovladusic"><img src="images/github-logo.png" alt="github"></a></li>
+                            <li><a href="https://www.linkedin.com/in/teo-vladusic-84b945205/"><img src="images/linkedin-logo.png" alt="linkedin"></a></li>
+                            <li><a href="https://www.instagram.com/teovladusic_4/"><img src="images/instagram-logo.png" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="slider.js"></script>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav');
+            mobileBtnExit = document.getElementById('mobile-exit');
+        
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn')
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn')
+        })
+    </script>
+</body>
+</html>
